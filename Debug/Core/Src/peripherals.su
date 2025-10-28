@@ -1,0 +1,8 @@
+../Core/Src/peripherals.c:11:6:MX_ADC1_Init	56	static
+../Core/Src/peripherals.c:61:6:MX_DAC1_Init	56	static
+../Core/Src/peripherals.c:89:6:MX_OPAMP1_Init	8	static
+../Core/Src/peripherals.c:109:6:MX_TIM1_Init	40	static
+../Core/Src/peripherals.c:142:6:MX_USART2_UART_Init	8	static
+../Core/Src/peripherals.c:176:6:MX_USART3_UART_Init	8	static
+../Core/Src/peripherals.c:210:6:MX_GPIO_Init	40	static
+../Core/Src/peripherals.c:229:6:TIM1_Config_For_Sampling	8	static

@@ -293,8 +293,8 @@ void HAL_TIM_Base_MspInit(TIM_HandleTypeDef* htim_base)
     __HAL_RCC_TIM1_CLK_ENABLE();
     /* USER CODE BEGIN TIM1_MspInit 1 */
     
-    // Enable TIM1 update interrupt
-    HAL_NVIC_SetPriority(TIM1_UP_TIM16_IRQn, 0, 0);
+  // Enable TIM1 update interrupt (lower priority than UART so UART IRQs can preempt)
+  HAL_NVIC_SetPriority(TIM1_UP_TIM16_IRQn, 1, 0);
     HAL_NVIC_EnableIRQ(TIM1_UP_TIM16_IRQn);
 
     /* USER CODE END TIM1_MspInit 1 */
@@ -387,8 +387,8 @@ void HAL_UART_MspInit(UART_HandleTypeDef* huart)
     GPIO_InitStruct.Alternate = GPIO_AF7_USART3;
     HAL_GPIO_Init(GPIOC, &GPIO_InitStruct);
 
-    /* USART3 interrupt Init */
-    HAL_NVIC_SetPriority(USART3_IRQn, 1, 0);
+  /* USART3 interrupt Init (give UART higher priority than TIM1 so ACKs are serviced promptly) */
+  HAL_NVIC_SetPriority(USART3_IRQn, 0, 0);
     HAL_NVIC_EnableIRQ(USART3_IRQn);
   }
 

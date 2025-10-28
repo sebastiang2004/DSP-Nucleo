@@ -21,8 +21,8 @@
 #include <ArduinoJson.h>
 
 // WiFi Configuration
-const char* ssid = "Orange-F80C_RPT";           // Change this
-const char* password = "HtC75TuGUyQY7TFdK5";    // Change this
+const char* ssid = "iPhone";           // Change this
+const char* password = "pfku67812";    // Change this
 
 // Backend API Configuration (optional)
 const char* backend_url = "http://192.168.1.100:3000/api/effects";  // Change to your backend IP

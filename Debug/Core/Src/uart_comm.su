@@ -1,0 +1,5 @@
+../Core/Src/uart_comm.c:17:6:Parse_UART_Command	264	static
+../Core/Src/uart_comm.c:299:6:Send_UART_Response	16	static
+../Core/Src/uart_comm.c:310:6:HAL_UART_RxCpltCallback	16	static
+../Core/Src/uart_comm.c:336:6:HAL_UART_TxCpltCallback	16	static
+../Core/Src/uart_comm.c:349:6:HAL_UART_ErrorCallback	16	static

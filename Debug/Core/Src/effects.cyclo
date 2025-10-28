@@ -1,0 +1,4 @@
+../Core/Src/effects.c:42:11:Apply_Distortion	3
+../Core/Src/effects.c:57:11:Apply_Overdrive	17
+../Core/Src/effects.c:135:11:Apply_Delay	8
+../Core/Src/effects.c:177:11:Apply_NoiseGate	9
